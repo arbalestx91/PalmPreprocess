@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teaonly.projects.palmapi.InterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P1"
+        android:id="@+id/txtP1"
+        android:layout_below="@+id/txtSize"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgP1"
+        android:layout_below="@+id/txtP1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snap 1st Sample"
+        android:id="@+id/btnP1"
+        android:layout_below="@+id/imgP1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P2"
+        android:id="@+id/txtP2"
+        android:layout_below="@+id/btnP1"
+        android:layout_centerHorizontal="true" />
+
+    /*
+    ================================================================
+    9 shifts of image
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X-1, Y-1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP21"
+        android:layout_below="@+id/txtP2"
+        android:layout_toLeftOf="@+id/imgP22"
+        android:layout_toStartOf="@+id/imgP22"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X-1, Y-1 END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X, Y-1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP22"
+        android:layout_below="@+id/txtP2"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X, Y-1 END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X+1, Y-1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP23"
+        android:layout_below="@+id/txtP2"
+        android:layout_toRightOf="@+id/imgP22"
+        android:layout_toEndOf="@+id/imgP22"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X+1, Y-1 END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X-1, Y
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP24"
+        android:layout_below="@+id/imgP21"
+        android:layout_toLeftOf="@+id/imgP2"
+        android:layout_toStartOf="@+id/imgP2"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X-1, Y END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    Original crop
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP2"
+        android:layout_below="@+id/imgP22"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    Original crop END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X+1, Y
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP25"
+        android:layout_below="@+id/imgP23"
+        android:layout_toRightOf="@+id/imgP2"
+        android:layout_toEndOf="@+id/imgP2"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X+1, Y END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X-1, Y+1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP26"
+        android:layout_below="@+id/imgP24"
+        android:layout_toLeftOf="@+id/imgP27"
+        android:layout_toStartOf="@+id/imgP27"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X-1, Y+1 END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X, Y+1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP27"
+        android:layout_below="@+id/imgP2"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X, Y+1 END
+    ================================================================
+    */
+
+    /*
+    ================================================================
+    X+1, Y+1
+    ================================================================
+    */
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imgP28"
+        android:layout_below="@+id/imgP25"
+        android:layout_toRightOf="@+id/imgP27"
+        android:layout_toEndOf="@+id/imgP27"
+        android:layout_centerHorizontal="true" />
+    /*
+    ================================================================
+    X+1, Y+1 END
+    ================================================================
+    */
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snap 2nd Sample"
+        android:id="@+id/btnP2"
+        android:layout_below="@+id/imgP27"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compare"
+        android:id="@+id/btnCompare"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log P1"
+        android:id="@+id/btnLogP1"
+        android:layout_below="@+id/imgP1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log P2"
+        android:id="@+id/btnLogP2"
+        android:layout_below="@+id/imgP2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSize"
+        android:hint="Enter desired size of ROI"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtSize"
+        android:layout_toEndOf="@+id/txtSize" />
+
+</RelativeLayout>
