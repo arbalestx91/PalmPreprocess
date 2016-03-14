@@ -220,9 +220,7 @@ public class InterActivity extends Activity {
                 emailString.append(String.valueOf(totalDuration/8));
                 emailString.append("ms");
 
-                Intent summaryIntent = new Intent(getApplicationContext(), SummaryActivity.class);
-                summaryIntent.putExtra("emailString", emailString.toString());
-                startActivity(summaryIntent);
+                sendEmail(emailString.toString());
             }
         });
     }
@@ -347,6 +345,19 @@ public class InterActivity extends Activity {
                 emailString.append("ms");
                 emailString.append("\n\n");
             }
+        }
+    }
+
+    protected void sendEmail(String string) {
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:" + "fyp@arbalestx.com"));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "FYP");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, string);
+
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Send email using..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(getApplicationContext(), "No email clients installed.", Toast.LENGTH_SHORT).show();
         }
     }
 
